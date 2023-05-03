@@ -8,18 +8,18 @@ public class BinarySearchWord {
     public static int binarySearch(String[] words, String searchWord) {
 
         int left = 0;
-        int right = words.length-1;
+        int right = words.length;
 
-        while (left <= right) {
+        while (left < right) {
             int mid = (left + right) / 2;
             int search = searchWord.compareTo(words[mid]);
 
-            if (search == 0) {
-                return mid;  // found the word
-            } else if (search < 0) {
-                right = mid - 1;  // search left half
+            if (searchWord.compareTo(words[mid]) < 0) {
+                right = mid;    // search right half
+            } else if (searchWord.compareTo(words[mid]) > 0) {
+                left = mid +1 ;  // search left half
             } else {
-                left = mid + 1;  // search right half
+               return mid;
             }
         }
         return -1;  // word not found
@@ -37,9 +37,9 @@ public class BinarySearchWord {
         String searchWord = scanner.next();
 
         int indexValue = binarySearch(words,searchWord);
-        if (indexValue != -1)
-            System.out.println("Word is Found");
+        if (indexValue == -1)
+            System.out.println("Word is not Found");
         else
-            System.out.println("Word Not Found");
+            System.out.println("Word is Found");
     }
 }
