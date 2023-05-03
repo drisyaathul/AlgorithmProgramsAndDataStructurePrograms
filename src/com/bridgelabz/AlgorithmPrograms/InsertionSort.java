@@ -3,9 +3,9 @@ package com.bridgelabz.AlgorithmPrograms;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionSort{
+public class InsertionSort<T>{
 
-    public static void sorting(String[] array) {
+    public static <T extends Comparable<T>> void sorting(T[] array) {
         //sort string array using Arrays.sort method
         System.out.println("Sorted order is:- ");
 
