@@ -31,21 +31,14 @@ public class BubbleSort <T>{
         /*
          * enter the elements in the array using for loop
          */
-        Integer [] array = new Integer[size];
-        for (int i=0; i<size; i++) {
+        Integer[] array = new Integer[size];
+        for (int i = 0; i < size; i++) {
             System.out.println("Enter the element : ");
-            array [i] = scanner.nextInt();
+            array[i] = scanner.nextInt();
         }
         System.out.println("Print the elements in an array (Before Sorting):- ");
         //to String method is to return the string representation of the object.
         System.out.println(Arrays.toString(array));
         sorting(array);
-
-        /*
-        Printing the Sorting list
-         */
-
     }
-
-
 }
