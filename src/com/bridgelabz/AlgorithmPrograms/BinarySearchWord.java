@@ -19,12 +19,11 @@ public class BinarySearchWord {
             } else if (searchWord.compareTo(words[mid]) > 0) {
                 left = mid +1 ;  // search left half
             } else {
-               return mid;
+                return mid;
             }
         }
         return -1;  // word not found
     }
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
