@@ -35,7 +35,6 @@ public class LinkedList<T> {
             tail = newNode;
         }
     }
-
     public Node<T> search(T searchData) {
         /*
          when temp node is head,and temp is not equal to null then its data equals to search data
@@ -48,7 +47,6 @@ public class LinkedList<T> {
         }
         return null; //when temp = null;
     }
-
     public boolean insertAfter(T searchData, T insertData) {
         /*
          * After searching the node the new node is inserted next ot it.

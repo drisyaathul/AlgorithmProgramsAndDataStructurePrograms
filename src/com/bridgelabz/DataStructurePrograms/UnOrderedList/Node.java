@@ -9,10 +9,10 @@ public class Node <T> {
 
     public Node() {
     }
-    /*
+    public Node(T data) {
+        /*
        Parameter Constructor
      */
-    public Node(T data) {
         this.data = data;
     }
 }
