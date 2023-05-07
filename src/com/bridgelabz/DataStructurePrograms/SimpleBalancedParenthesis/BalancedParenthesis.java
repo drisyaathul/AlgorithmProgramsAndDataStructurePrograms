@@ -1,6 +1,4 @@
-package com.bridgelabz.SimpleBalancedParenthesis;
-
-import com.bridgelabz.DataStructurePrograms.UnOrderedList.LinkedList;
+package com.bridgelabz.DataStructurePrograms.SimpleBalancedParenthesis;
 
 public class BalancedParenthesis {
     public static void main(String[] args) {
