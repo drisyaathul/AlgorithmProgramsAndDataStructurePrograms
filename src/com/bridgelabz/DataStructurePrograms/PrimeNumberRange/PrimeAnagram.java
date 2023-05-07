@@ -54,7 +54,7 @@ public class PrimeAnagram extends PrimeNumber{
     }
     public static void main(String[] args) {
 
-        System.out.println("Prime Numbers (0-1000) In 2D Array :-");
+        System.out.println("Prime Anagrams In 2D Array :-");
         PrimeAnagram primeAnagram = new PrimeAnagram();
         primeAnagram.prime();
         primeAnagram.display();
