@@ -1,4 +1,4 @@
-package com.bridgelabz.SimpleBalancedParenthesis;
+package com.bridgelabz.DataStructurePrograms.SimpleBalancedParenthesis;
 
 public class Node <T> {
     /*
